@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<search> 
+  
+  
+    
+    <entry>
+      <title>在Linux服务器上安装Windows系统</title>
+      <link href="//post/%E5%9C%A8Linux%E6%9C%8D%E5%8A%A1%E5%99%A8%E4%B8%8A%E5%AE%89%E8%A3%85Windows%E7%B3%BB%E7%BB%9F.html"/>
+      <url>//post/%E5%9C%A8Linux%E6%9C%8D%E5%8A%A1%E5%99%A8%E4%B8%8A%E5%AE%89%E8%A3%85Windows%E7%B3%BB%E7%BB%9F.html</url>
+      
+        <content type="html"><![CDATA[<h1 id="在Linux服务器上安装Windows系统"><a href="#在Linux服务器上安装Windows系统" class="headerlink" title="在Linux服务器上安装Windows系统"></a>在Linux服务器上安装Windows系统</h1><blockquote><p>系统环境：雨云2H4G服务器，Ubuntu22.04系统</p><p>安装软件：Docker,docker-compose</p><p>使用我的推广链接可获得首月五折优惠券：<a href="https://www.rainyun.com/MTEyODEy_">雨云</a></p></blockquote><h2 id="第一步：创建安装目录"><a href="#第一步：创建安装目录" class="headerlink" title="第一步：创建安装目录"></a>第一步：创建安装目录</h2><p>在终端输入</p><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">mkdir /windows</span><br></pre></td></tr></table></figure><p>进入刚刚创建的目录</p><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">cd /windows</span><br></pre></td></tr></table></figure><h2 id="第二步：创建文件"><a href="#第二步：创建文件" class="headerlink" title="第二步：创建文件"></a>第二步：创建文件</h2><p>1,输入</p><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">vim docker-compose.yml</span><br></pre></td></tr></table></figure><p>2,在英文输入状态下，点击键盘上的 i (insert),复制粘贴以下内容：</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line">version: &quot;3&quot;</span><br><span class="line">services:</span><br><span class="line">  windows:</span><br><span class="line">    image: dockurr/windows</span><br><span class="line">    container_name: windows</span><br><span class="line">    devices:</span><br><span class="line">      - /dev/kvm</span><br><span class="line">    cap_add:</span><br><span class="line">      - NET_ADMIN</span><br><span class="line">    ports:</span><br><span class="line">      - 8006:8006</span><br><span class="line">      - 3389:3389/tcp</span><br><span class="line">      - 3389:3389/udp</span><br><span class="line">    stop_grace_period: 2m</span><br><span class="line">    restart: on-failure</span><br></pre></td></tr></table></figure><p>3,点击ESC退出insert模式，在英文输入状态下输入“:wq”,单击enter</p><h2 id="第三步：运行程序"><a href="#第三步：运行程序" class="headerlink" title="第三步：运行程序"></a>第三步：运行程序</h2><p>在终端中输入</p><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">docker-compose up -d</span><br></pre></td></tr></table></figure><h2 id="第四步：安装Windows"><a href="#第四步：安装Windows" class="headerlink" title="第四步：安装Windows"></a>第四步：安装Windows</h2><p>在浏览器输入：你的IP:8006</p><p>随后会自动下载镜像包并且安装Windows</p><blockquote><p>[!NOTE]</p><p>记得放行服务器的8006以及3389端口，否则可能出现无法访问的情况</p></blockquote><h2 id="附：环境变量"><a href="#附：环境变量" class="headerlink" title="附：环境变量"></a>附：环境变量</h2><h5 id="更改Windows版本"><a href="#更改Windows版本" class="headerlink" title="更改Windows版本"></a>更改Windows版本</h5><p>在docker-compose.yml文件中添加：</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">environment:</span><br><span class="line">  VERSION: &quot;win11&quot;</span><br></pre></td></tr></table></figure><p>对应的windows版本：</p><table><thead><tr><th>Value</th><th>Description</th><th>Source</th><th>Transfer</th><th>Size</th></tr></thead><tbody><tr><td>win11</td><td>Windows 11 Pro</td><td>Microsoft</td><td>Fast</td><td>6.4 GB</td></tr><tr><td>win10</td><td>Windows 10 Pro</td><td>Microsoft</td><td>Fast</td><td>5.8 GB</td></tr><tr><td>ltsc10</td><td>Windows 10 LTSC</td><td>Microsoft</td><td>Fast</td><td>4.6 GB</td></tr><tr><td>win81</td><td>Windows 8.1 Pro</td><td>Microsoft</td><td>Fast</td><td>4.2 GB</td></tr><tr><td>win7</td><td>Windows 7 SP1</td><td>Bob Pony</td><td>Medium</td><td>3.0 GB</td></tr><tr><td>vista</td><td>Windows Vista SP2</td><td>Bob Pony</td><td>Medium</td><td>3.6 GB</td></tr><tr><td>winxp</td><td>Windows XP SP3</td><td>Bob Pony</td><td>Medium</td><td>0.6 GB</td></tr><tr><td>2022</td><td>Windows Server 2022</td><td>Microsoft</td><td>Fast</td><td>4.7 GB</td></tr><tr><td>2019</td><td>Windows Server 2019</td><td>Microsoft</td><td>Fast</td><td>5.3 GB</td></tr><tr><td>2016</td><td>Windows Server 2016</td><td>Microsoft</td><td>Fast</td><td>6.5 GB</td></tr><tr><td>2012</td><td>Windows Server 2012 R2</td><td>Microsoft</td><td>Fast</td><td>4.3 GB</td></tr><tr><td>2008</td><td>Windows Server 2008 R2</td><td>Microsoft</td><td>Fast</td><td>3.0 GB</td></tr><tr><td>core11</td><td>Tiny 11 Core</td><td>Archive.org</td><td>Slow</td><td>2.1 GB</td></tr><tr><td>tiny11</td><td>Tiny 11</td><td>Archive.org</td><td>Slow</td><td>3.8 GB</td></tr><tr><td>tiny10</td><td>Tiny 10</td><td>Archive.org</td><td>Slow</td><td>3.6 GB</td></tr></tbody></table><h5 id="设置核心数以及内存大小"><a href="#设置核心数以及内存大小" class="headerlink" title="设置核心数以及内存大小"></a>设置核心数以及内存大小</h5><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">environment:</span><br><span class="line">  RAM_SIZE: &quot;8G&quot;</span><br><span class="line">  CPU_CORES: &quot;4&quot;</span><br></pre></td></tr></table></figure><h5 id="更改硬盘大小"><a href="#更改硬盘大小" class="headerlink" title="更改硬盘大小"></a>更改硬盘大小</h5><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">environment:</span><br><span class="line">  DISK_SIZE: &quot;256G&quot;</span><br></pre></td></tr></table></figure><h5 id="更改存储位置"><a href="#更改存储位置" class="headerlink" title="更改存储位置"></a>更改存储位置</h5><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">volumes:</span><br><span class="line">   - /var/win:/storage</span><br></pre></td></tr></table></figure>]]></content>
+      
+      
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>OneAPI使用方式</title>
+      <link href="//post/API%E4%BD%BF%E7%94%A8%E6%96%B9%E5%BC%8F.html"/>
+      <url>//post/API%E4%BD%BF%E7%94%A8%E6%96%B9%E5%BC%8F.html</url>
+      
+        <content type="html"><![CDATA[<h1 id="API使用方式"><a href="#API使用方式" class="headerlink" title="API使用方式"></a>API使用方式</h1><h2 id="第一种-推荐-使用网站提供的聊天工具"><a href="#第一种-推荐-使用网站提供的聊天工具" class="headerlink" title="第一种(推荐):使用网站提供的聊天工具"></a>第一种(推荐):使用网站提供的聊天工具</h2><p>​1、注册完成后点击<strong>右上角控制台</strong></p><p>​2、点击左侧栏令牌</p><img src="https://cn-sy1.rains3.com/pai-source/API%E8%AF%B4%E6%98%8E%E4%B9%A6/1.1.png" alt="1.1" style="zoom:15%;" /><p>​3、点击新建令牌</p><img src="https://cn-sy1.rains3.com/pai-source/API%E8%AF%B4%E6%98%8E%E4%B9%A6/1.2.png" alt="1.2" style="zoom:15%;" /><p>​4、名称:随意填写自己喜好的名称</p><p>​       额度:当前Api可使用的最大额度</p><img src="https://cn-sy1.rains3.com/pai-source/API%E8%AF%B4%E6%98%8E%E4%B9%A6/1.3.png" style="zoom:25%;" /><p>​5、点击复制。</p><img src="https://cn-sy1.rains3.com/pai-source/API%E8%AF%B4%E6%98%8E%E4%B9%A6/1.4.png" alt="1.4" style="zoom:15%;" /><p>6、点击聊天</p><img src="https://cn-sy1.rains3.com/pai-source/API%E8%AF%B4%E6%98%8E%E4%B9%A6/1.5.png" alt="1.5" style="zoom:15%;" /><p>7、将api填入聊天设置，点击左下角头像旁边的设置按钮</p><img src="https://cn-sy1.rains3.com/pai-source/API%E8%AF%B4%E6%98%8E%E4%B9%A6/1.6.png" alt="1.6" style="zoom:20%;" /><p>8、填入刚刚复制的Api</p><img src="https://cn-sy1.rains3.com/pai-source/API%E8%AF%B4%E6%98%8E%E4%B9%A6/1.7.png" alt="1.7" style="zoom:20%;" />]]></content>
+      
+      
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>免责申明</title>
+      <link href="//post/%E5%85%8D%E8%B4%A3%E7%94%B3%E6%98%8E.html"/>
+      <url>//post/%E5%85%8D%E8%B4%A3%E7%94%B3%E6%98%8E.html</url>
+      
+        <content type="html"><![CDATA[<h1 id="免责申明"><a href="#免责申明" class="headerlink" title="免责申明"></a>免责申明</h1><p>免责声明：</p><p>本人所发表的所有内容、观点或言论均仅代表个人观点，与任何组织、机构或个人无关。请注意，所有内容均为虚构，不代表任何真实事件或事实。读者或听众请自行判断并承担所有风险。</p><p>此致，</p><p><strong>Pai</strong> 敬上</p>]]></content>
+      
+      
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>未成年人ICP备案注意事项</title>
+      <link href="//post/%E6%9C%AA%E6%88%90%E5%B9%B4%E4%BA%BAICP%E5%A4%87%E6%A1%88%E6%B3%A8%E6%84%8F%E4%BA%8B%E9%A1%B9.html"/>
+      <url>//post/%E6%9C%AA%E6%88%90%E5%B9%B4%E4%BA%BAICP%E5%A4%87%E6%A1%88%E6%B3%A8%E6%84%8F%E4%BA%8B%E9%A1%B9.html</url>
+      
+        <content type="html"><![CDATA[<h1 id="未成年人ICP备案注意事项"><a href="#未成年人ICP备案注意事项" class="headerlink" title="未成年人ICP备案注意事项"></a>未成年人ICP备案注意事项</h1><hr><h3 id="查阅当地信通院备案年龄要求"><a href="#查阅当地信通院备案年龄要求" class="headerlink" title="查阅当地信通院备案年龄要求"></a>查阅当地信通院备案年龄要求</h3><p>可以前往<a href="https://help.aliyun.com/document_detail/116031.html?spm=a2c4g.50264.0.0.4f945519wWGAVM">阿里云</a>查看各地管局对ICP备案的年龄要求</p><blockquote><p>注：各地区管局要求可能会有所差异</p></blockquote><h3 id="准备所需材料"><a href="#准备所需材料" class="headerlink" title="准备所需材料"></a>准备所需材料</h3><h5 id="个人材料："><a href="#个人材料：" class="headerlink" title="个人材料："></a>个人材料：</h5><p>1.个人身份证件（身份证，护照等）</p><p>2.承诺书，内容:</p><ol><li><p>介绍网站内容 </p></li><li><p>与监护人是什么关系</p></li><li><p>承诺所有网站都是本人使用，不做违法违规信息，否则愿意接受注销网站并列入域名黑名单的处罚。</p></li></ol><p>3.朗读视频，朗读内容：我叫xxx（备案人），此次备案主体为xxx（备案主体），我愿意为提交的备案信息真实性负责，时间：YYYY年MM月DD日</p><blockquote><p>视频中时间不要与提交备案时间超过三天</p></blockquote><p>其他辅助材料：</p><p>1.父母任意一方身份证（用于证明监护关系）</p><h3 id="备案步骤"><a href="#备案步骤" class="headerlink" title="备案步骤"></a>备案步骤</h3><ol><li>前往阿里云主页点击ICP备案</li></ol><p><img src="https://source.tuftech.org/beian1.png" alt="备案"></p><ol start="2"><li>选择开始备案</li></ol><p><img src="https://source.tuftech.org/beian2.png" alt="备案"></p><ol start="3"><li>选择免费，开始备案</li></ol><p><img src="https://source.tuftech.org/beian3.png" alt="备案"></p><ol start="4"><li>选择要备案的域名</li></ol><blockquote><p>由于我已经完成备案所以可能会有些出入</p></blockquote><p><img src="https://source.tuftech.org/beian4.png" alt="备案"></p><ol start="5"><li>根据提示一步一步提交材料进行备案</li></ol><h3 id="注意事项"><a href="#注意事项" class="headerlink" title="注意事项"></a>注意事项</h3><ul><li>提交的材料要保证真实性和及时性，避免相差时间太久</li><li>注意接听阿里云客服的电话：95187，(0571) 2895 0440</li><li>再收到短信核验后，必须在24小时内进入<a href="http://beian.miit.gov.cn/">工信部网站</a>完成短信核验</li></ul><p>最后祝各位备案成功</p>]]></content>
+      
+      
+      
+        <tags>
+            
+            <tag> 技术 </tag>
+            
+            <tag> 分享 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>策源棋社</title>
+      <link href="//post/%E7%AD%96%E6%BA%90%E6%A3%8B%E7%A4%BE%E7%AC%AC%E4%B8%80%E6%AC%A1%E7%A4%BE%E5%9B%A2%E6%B4%BB%E5%8A%A8.html"/>
+      <url>//post/%E7%AD%96%E6%BA%90%E6%A3%8B%E7%A4%BE%E7%AC%AC%E4%B8%80%E6%AC%A1%E7%A4%BE%E5%9B%A2%E6%B4%BB%E5%8A%A8.html</url>
+      
+        <content type="html"><![CDATA[<h1 id="策源围棋社第一次会议"><a href="#策源围棋社第一次会议" class="headerlink" title="策源围棋社第一次会议"></a>策源围棋社第一次会议</h1><blockquote><p>就策源围棋社管理白皮书进行讨论</p><p>时间：2023年5月19日</p></blockquote><h2 id="管理人员"><a href="#管理人员" class="headerlink" title="管理人员"></a>管理人员</h2><table><thead><tr><th>姓名</th><th>职务</th><th>年级</th></tr></thead><tbody><tr><td>周苗祺</td><td>社长</td><td>高一</td></tr><tr><td>周家霂</td><td>副社长</td><td>高一</td></tr><tr><td>陈芷郡</td><td>外联&amp;学生教师</td><td>高一</td></tr><tr><td>萧隆升</td><td>宣传&amp;学生教师</td><td>高一</td></tr><tr><td>sxk</td><td>领队</td><td>高一</td></tr></tbody></table><h2 id="招新简章"><a href="#招新简章" class="headerlink" title="招新简章"></a>招新简章</h2><ol><li>永远为社外成员敞开比赛的大门。</li><li>对于加入社团但不会围棋的同学，先加入我们的社群，积极参与活动。</li><li>欢迎任何有或无基础的同学加入我们的围棋社。</li></ol><h2 id="比赛"><a href="#比赛" class="headerlink" title="比赛"></a>比赛</h2><ol><li>区阳光体育大联赛</li><li>上海市中小学生智运会</li><li>塘桥杯</li><li>晨晖杯</li></ol>]]></content>
+      
+      
+      
+        <tags>
+            
+            <tag> 社团活动 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>欢迎来到我的博客</title>
+      <link href="//post/hello-world.html"/>
+      <url>//post/hello-world.html</url>
+      
+        <content type="html"><![CDATA[<h1 id="欢迎来到我的博客"><a href="#欢迎来到我的博客" class="headerlink" title="欢迎来到我的博客"></a>欢迎来到我的博客</h1><p>这是我的博客的首页文章，我很高兴能与您分享我的思考和经验。</p><h2 id="关于我"><a href="#关于我" class="headerlink" title="关于我"></a>关于我</h2><p>我是一个热爱技术和写作的人，喜欢分享自己的学习和成果。这个博客是我记录和展示我的思考、项目和想法的地方。</p><h2 id="博客内容"><a href="#博客内容" class="headerlink" title="博客内容"></a>博客内容</h2><p>在这个博客中，您将找到以下类型的文章：</p><ul><li>技术教程和指南</li><li>开发经验和心得分享</li><li>最新科技趋势和新闻评论</li><li>随笔和个人见解</li></ul><h2 id="如何使用这个博客"><a href="#如何使用这个博客" class="headerlink" title="如何使用这个博客"></a>如何使用这个博客</h2><p>您可以浏览博客的不同分类和标签来查找感兴趣的文章。如果您对特定的主题或文章有任何疑问或建议，欢迎在评论区留言。</p><h2 id="订阅博客"><a href="#订阅博客" class="headerlink" title="订阅博客"></a>订阅博客</h2><p>如果您喜欢我的博客并希望及时收到新文章的更新，可以订阅我的博客。您可以在博客页面中找到订阅选项。</p><h2 id="联系我"><a href="#联系我" class="headerlink" title="联系我"></a>联系我</h2><p>如果您有任何问题、建议或合作机会，可以通过以下方式联系我：</p><ul><li>电子邮件：<a href="mailto:&#77;&#117;&#x73;&#107;&#90;&#104;&#x6f;&#117;&#x4d;&#81;&#x40;&#111;&#x75;&#x74;&#108;&#x6f;&#x6f;&#107;&#x2e;&#99;&#x6f;&#109;">&#77;&#117;&#x73;&#107;&#90;&#104;&#x6f;&#117;&#x4d;&#81;&#x40;&#111;&#x75;&#x74;&#108;&#x6f;&#x6f;&#107;&#x2e;&#99;&#x6f;&#109;</a></li><li>QQ: 401674191</li><li>Twitter：@TUF_Pai</li></ul><p>感谢您的阅读和支持！希望您在我的博客中找到有价值的信息和灵感。</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> 随笔 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 博客 </tag>
+            
+            <tag> 开始 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+  
+  
+</search>
