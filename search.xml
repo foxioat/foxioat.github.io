@@ -17,7 +17,7 @@
     
     
     <entry>
-      <title>帮助须知</title>
+      <title>Cloudflare部署免费临时邮箱系统</title>
       <link href="//post/Cloudflare%E9%83%A8%E7%BD%B2%E5%85%8D%E8%B4%B9%E4%B8%B4%E6%97%B6%E9%82%AE%E7%AE%B1%E7%B3%BB%E7%BB%9F.html"/>
       <url>//post/Cloudflare%E9%83%A8%E7%BD%B2%E5%85%8D%E8%B4%B9%E4%B8%B4%E6%97%B6%E9%82%AE%E7%AE%B1%E7%B3%BB%E7%BB%9F.html</url>
       
@@ -26,6 +26,8 @@
       
       
         <tags>
+            
+            <tag> 技术分享 </tag>
             
             <tag> Cloudflare </tag>
             
