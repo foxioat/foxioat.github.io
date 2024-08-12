@@ -440,7 +440,7 @@
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-check fa-fw"></i>Update Date:&nbsp;&nbsp;
-                    2024-08-11
+                    2024-08-12
                 </div>
                 
 
@@ -539,10 +539,12 @@
 <p><img src="/../images/Cloudflare%E9%83%A8%E7%BD%B2%E5%85%8D%E8%B4%B9%E4%B8%B4%E6%97%B6%E9%82%AE%E7%AE%B1%E7%B3%BB%E7%BB%9F/11.png" alt="11"></p>
 </li>
 <li><p>回到最开始的worker界面，点击设置，选择变量，添加以下四个变量，DOMAINS填写顶级域名，然后点击部署</p>
+</li>
+</ol>
 <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">ADMIN_PASSWORDS = [&quot;1234&quot;]</span><br><span class="line">PASSWORDS = [&quot;1234&quot;]</span><br><span class="line">DOMAINS = [&quot;b4.hk&quot;]</span><br><span class="line">JWT_SECRET =[&quot;xxxyyyzzz&quot;]</span><br></pre></td></tr></table></figure>
 
-<p><img src="/../images/Cloudflare%E9%83%A8%E7%BD%B2%E5%85%8D%E8%B4%B9%E4%B8%B4%E6%97%B6%E9%82%AE%E7%AE%B1%E7%B3%BB%E7%BB%9F/12.png" alt="12"></p>
-</li>
+<p>   <img src="/../images/Cloudflare%E9%83%A8%E7%BD%B2%E5%85%8D%E8%B4%B9%E4%B8%B4%E6%97%B6%E9%82%AE%E7%AE%B1%E7%B3%BB%E7%BB%9F/12.png" alt="12"></p>
+<ol start="7">
 <li><p>往下滑动，点击下方的KV 命名空间绑定，选择创建，名称填写为temp_mail，点击添加</p>
 <p>   <img src="/../images/Cloudflare%E9%83%A8%E7%BD%B2%E5%85%8D%E8%B4%B9%E4%B8%B4%E6%97%B6%E9%82%AE%E7%AE%B1%E7%B3%BB%E7%BB%9F/13.png" alt="13"></p>
 </li>
@@ -614,21 +616,22 @@
 <p><img src="/../images/Cloudflare%E9%83%A8%E7%BD%B2%E5%85%8D%E8%B4%B9%E4%B8%B4%E6%97%B6%E9%82%AE%E7%AE%B1%E7%B3%BB%E7%BB%9F/32.png" alt="32"></p>
 </li>
 <li><p>点击设置，选择变量，点击编辑变量，添加变量，部署</p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">RESEND_TOKEN = 你的密钥</span><br></pre></td></tr></table></figure>
-
-<p><img src="/../images/Cloudflare%E9%83%A8%E7%BD%B2%E5%85%8D%E8%B4%B9%E4%B8%B4%E6%97%B6%E9%82%AE%E7%AE%B1%E7%B3%BB%E7%BB%9F/33.png" alt="33"></p>
 </li>
 </ol>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">RESEND_TOKEN = 你的密钥</span><br></pre></td></tr></table></figure>
+
+<p>   <img src="/../images/Cloudflare%E9%83%A8%E7%BD%B2%E5%85%8D%E8%B4%B9%E4%B8%B4%E6%97%B6%E9%82%AE%E7%AE%B1%E7%B3%BB%E7%BB%9F/33.png" alt="33"></p>
 <h3 id="Telegram机器人部署（强烈建议）"><a href="#Telegram机器人部署（强烈建议）" class="headerlink" title="Telegram机器人部署（强烈建议）"></a>Telegram机器人部署（强烈建议）</h3><ol>
 <li><p>创建一个机器人，在tg中搜索@BotFather申请</p>
 </li>
 <li><p>获取到机器人的token，然后搜索@userinfobot，获取自己的账户id</p>
 </li>
 <li><p>仿照之前的步骤再次添加变量</p>
+</li>
+</ol>
 <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">TELEGRAM_BOT_TOKEN = 机器人token</span><br></pre></td></tr></table></figure>
 
-
-</li>
+<ol start="4">
 <li><p>打开系统的管理员页面：前端域名&#x2F;admin，在此处填写你的tg用户id</p>
 <p><img src="/../images/Cloudflare%E9%83%A8%E7%BD%B2%E5%85%8D%E8%B4%B9%E4%B8%B4%E6%97%B6%E9%82%AE%E7%AE%B1%E7%B3%BB%E7%BB%9F/34.png" alt="34"></p>
 </li>
