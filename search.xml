@@ -4,6 +4,25 @@
   
     
     <entry>
+      <title>好友共享影院</title>
+      <link href="//post/%E5%A5%BD%E5%8F%8B%E5%85%B1%E4%BA%AB%E5%BD%B1%E9%99%A2.html"/>
+      <url>//post/%E5%A5%BD%E5%8F%8B%E5%85%B1%E4%BA%AB%E5%BD%B1%E9%99%A2.html</url>
+      
+        <content type="html"><![CDATA[<h1 id="搭建好友共享影院"><a href="#搭建好友共享影院" class="headerlink" title="搭建好友共享影院"></a>搭建好友共享影院</h1><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">项目地址：https://github.com/synctv-org/synctv</span><br><span class="line">服务器购买：https://www.rainyun.com/MTEyODEy_</span><br><span class="line">服务器系统：ubuntu2204</span><br><span class="line">服务器环境：docker</span><br></pre></td></tr></table></figure><h3 id="安装Docker"><a href="#安装Docker" class="headerlink" title="安装Docker"></a>安装Docker</h3><blockquote><p>使用雨云服务器的小伙伴可以直接在安装系统的时候选择安装docker环境</p></blockquote><ol><li><p>更新包管理器</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">apt update</span><br></pre></td></tr></table></figure></li><li><p>安装必要软件包</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo apt install apt-transport-https ca-certificates curl software-properties-common</span><br></pre></td></tr></table></figure></li><li><p>输入以下指令</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo apt-key add -</span><br></pre></td></tr></table></figure></li></ol>]]></content>
+      
+      
+      
+        <tags>
+            
+            <tag> 技术分享 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>帮助须知</title>
       <link href="//post/%E5%B8%AE%E5%8A%A9%E9%A1%BB%E7%9F%A5.html"/>
       <url>//post/%E5%B8%AE%E5%8A%A9%E9%A1%BB%E7%9F%A5.html</url>
