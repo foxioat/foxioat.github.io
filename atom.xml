@@ -6,7 +6,7 @@
   <link href="https://blog.paipai.site/atom.xml" rel="self"/>
   
   <link href="https://blog.paipai.site/"/>
-  <updated>2024-08-05T09:07:57.660Z</updated>
+  <updated>2024-10-09T14:02:20.304Z</updated>
   <id>https://blog.paipai.site/</id>
   
   <author>
@@ -15,6 +15,27 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>verify</title>
+    <link href="https://blog.paipai.site/post/verify.html"/>
+    <id>https://blog.paipai.site/post/verify.html</id>
+    <published>2024-10-09T14:01:32.000Z</published>
+    <updated>2024-10-09T14:02:20.304Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;p&gt;This message is used to verify that this feed (feedId:66838607891904512) belongs to me (userId:65993446112569344). Join me in enjoying</summary>
+        
+      
+    
+    
+    
+    
+  </entry>
   
   <entry>
     <title>帮助须知</title>
@@ -31,10 +52,7 @@
     <summary type="html">&lt;h1 id=&quot;帮助获取须知&quot;&gt;&lt;a href=&quot;#帮助获取须知&quot; class=&quot;headerlink&quot; title=&quot;帮助获取须知&quot;&gt;&lt;/a&gt;帮助获取须知&lt;/h1&gt;&lt;h3 id=&quot;1-软件下载&quot;&gt;&lt;a href=&quot;#1-软件下载&quot; class=&quot;headerlink&quot;</summary>
         
       
-<follow_challenge>
-    <feedId>66838607891904512</feedId>
-    <userId>65993446112569344</userId>
-</follow_challenge>    
+    
     
     
     
