@@ -30,7 +30,7 @@
       
         
         
-    <summary type="html"></summary>
+    <summary type="html">&lt;p&gt;This message is used to verify that this feed (feedId:66838607891904512) belongs to me (userId:65993446112569344). Join me in enjoying the next generation information browser &lt;a</summary>
         
       
     
@@ -53,7 +53,12 @@
       
         
         
-    <summary type="html"></summary>
+    <summary type="html">&lt;h1 id=&quot;帮助获取须知&quot;&gt;&lt;a href=&quot;#帮助获取须知&quot; class=&quot;headerlink&quot; title=&quot;帮助获取须知&quot;&gt;&lt;/a&gt;帮助获取须知&lt;/h1&gt;&lt;h3 id=&quot;1-软件下载&quot;&gt;&lt;a href=&quot;#1-软件下载&quot; class=&quot;headerlink&quot; title=&quot;1.软件下载&quot;&gt;&lt;/a&gt;1.软件下载&lt;/h3&gt;&lt;p&gt;​	打开软件官网并且根据自己的设备型号选择软件下载，&lt;a href=&quot;https://rustdesk.com/&quot;&gt;https://rustdesk.com/&lt;/a&gt;&lt;/p&gt;
+&lt;h3 id=&quot;2-配置软件&quot;&gt;&lt;a href=&quot;#2-配置软件&quot; class=&quot;headerlink&quot; title=&quot;2.配置软件&quot;&gt;&lt;/a&gt;2.配置软件&lt;/h3&gt;&lt;p&gt;​	1.点击ID旁边的三个点&lt;/p&gt;
+&lt;img src=&quot;https://cn-sy1.rains3.com/pai-source/blog/help_1.png&quot; alt=&quot;helper_1&quot; style=&quot;zoom:50%;&quot; /&gt;
+
+&lt;p&gt;​	2.选择网络设置，然后选择解锁网络设置&lt;/p&gt;
+&lt;img src=&quot;https://cn-sy1.rains3.com/pai-source/blog/help_2.png&quot; alt=&quot;help-2&quot; style=&quot;zoom:50%;&quot;</summary>
         
       
     
@@ -76,7 +81,168 @@
       
         
         
-    <summary type="html"></summary>
+    <summary type="html">&lt;h1 id=&quot;使用Cloudflare免费服务搭建临时邮箱系统&quot;&gt;&lt;a href=&quot;#使用Cloudflare免费服务搭建临时邮箱系统&quot; class=&quot;headerlink&quot; title=&quot;使用Cloudflare免费服务搭建临时邮箱系统&quot;&gt;&lt;/a&gt;使用Cloudflare免费服务搭建临时邮箱系统&lt;/h1&gt;&lt;blockquote&gt;
+&lt;p&gt;项目原地址：&lt;a href=&quot;https://github.com/dreamhunter2333/cloudflare_temp_email&quot;&gt;https://github.com/dreamhunter2333/cloudflare_temp_email&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;演示地址：tm.b4.hk&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;blockquote&gt;
+&lt;p&gt;[!NOTE]&lt;/p&gt;
+&lt;p&gt;事先准备内容：&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;p&gt;一个cloudflare账户&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;两个域名，分别对应&lt;/p&gt;
+&lt;p&gt;前端: tm.b4.hk&lt;/p&gt;
+&lt;p&gt;后端: tmapi.b4.hk&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/blockquote&gt;
+&lt;h3 id=&quot;D1数据库配置&quot;&gt;&lt;a href=&quot;#D1数据库配置&quot; class=&quot;headerlink&quot; title=&quot;D1数据库配置&quot;&gt;&lt;/a&gt;D1数据库配置&lt;/h3&gt;&lt;ol&gt;
+&lt;li&gt;打开Cloudflare主页&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;&lt;img src=&quot;/../images/Cloudflare%E9%83%A8%E7%BD%B2%E5%85%8D%E8%B4%B9%E4%B8%B4%E6%97%B6%E9%82%AE%E7%AE%B1%E7%B3%BB%E7%BB%9F/1.png&quot; alt=&quot;1&quot;&gt;&lt;/p&gt;
+&lt;ol start=&quot;2&quot;&gt;
+&lt;li&gt;选择左边侧栏的Workers和Pages，点进去&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;&lt;img src=&quot;/../images/Cloudflare%E9%83%A8%E7%BD%B2%E5%85%8D%E8%B4%B9%E4%B8%B4%E6%97%B6%E9%82%AE%E7%AE%B1%E7%B3%BB%E7%BB%9F/2.png&quot; alt=&quot;2&quot;&gt;&lt;/p&gt;
+&lt;ol start=&quot;3&quot;&gt;
+&lt;li&gt;选择左边侧栏的D1，点进去&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;&lt;img src=&quot;/../images/Cloudflare%E9%83%A8%E7%BD%B2%E5%85%8D%E8%B4%B9%E4%B8%B4%E6%97%B6%E9%82%AE%E7%AE%B1%E7%B3%BB%E7%BB%9F/3.png&quot; alt=&quot;3&quot;&gt;&lt;/p&gt;
+&lt;ol start=&quot;4&quot;&gt;
+&lt;li&gt;&lt;p&gt;创建数据库，选择仪表盘，名字填dev,然后点击创建&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/../images/Cloudflare%E9%83%A8%E7%BD%B2%E5%85%8D%E8%B4%B9%E4%B8%B4%E6%97%B6%E9%82%AE%E7%AE%B1%E7%B3%BB%E7%BB%9F/4.png&quot; alt=&quot;4&quot;&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;选择控制台&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/../images/Cloudflare%E9%83%A8%E7%BD%B2%E5%85%8D%E8%B4%B9%E4%B8%B4%E6%97%B6%E9%82%AE%E7%AE%B1%E7%B3%BB%E7%BB%9F/5.png&quot; alt=&quot;5&quot;&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;在命令行处输入以下指令，然后执行，出现一下提示说明已经完成&lt;/p&gt;
+&lt;figure class=&quot;highlight plaintext&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;6&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;7&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;8&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;9&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;10&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;11&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;12&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;13&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;14&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;15&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;16&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;17&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;18&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;19&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;20&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;21&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;22&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;23&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;24&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;25&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;26&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;27&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;28&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;29&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;30&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;31&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;32&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;33&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;34&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;35&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;36&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;37&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;38&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;39&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;40&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;41&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;42&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;43&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;44&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;45&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;46&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;47&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;48&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;49&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;50&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;51&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;52&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;53&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;54&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;55&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;56&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;57&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;58&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;59&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;60&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;61&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;62&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;63&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;64&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;65&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;66&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;67&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;68&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;69&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;70&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;71&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;72&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;73&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;74&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;75&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;76&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;77&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;78&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;79&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;80&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;81&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;82&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;83&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;84&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;85&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;86&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;87&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;88&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;89&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;90&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;CREATE TABLE IF NOT EXISTS raw_mails (&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    id INTEGER PRIMARY KEY,&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    message_id TEXT,&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    source TEXT,&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    address TEXT,&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    raw TEXT,&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    created_at DATETIME DEFAULT CURRENT_TIMESTAMP&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;);&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;CREATE INDEX IF NOT EXISTS idx_raw_mails_address ON raw_mails(address);&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;CREATE TABLE IF NOT EXISTS address (&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    id INTEGER PRIMARY KEY,&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    name TEXT UNIQUE,&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    created_at DATETIME DEFAULT CURRENT_TIMESTAMP,&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    updated_at DATETIME DEFAULT CURRENT_TIMESTAMP&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;);&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;CREATE INDEX IF NOT EXISTS idx_address_name ON address(name);&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;CREATE TABLE IF NOT EXISTS auto_reply_mails (&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    id INTEGER PRIMARY KEY,&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    source_prefix TEXT,&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    name TEXT,&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    address TEXT UNIQUE,&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    subject TEXT,&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    message TEXT,&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    enabled INTEGER DEFAULT 1,&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    created_at DATETIME DEFAULT CURRENT_TIMESTAMP&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;);&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;CREATE INDEX IF NOT EXISTS idx_auto_reply_mails_address ON auto_reply_mails(address);&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;CREATE TABLE IF NOT EXISTS address_sender (&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    id INTEGER PRIMARY KEY,&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    address TEXT UNIQUE,&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    balance INTEGER DEFAULT 0,&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    enabled INTEGER DEFAULT 1,&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    created_at DATETIME DEFAULT CURRENT_TIMESTAMP&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;);&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;CREATE INDEX IF NOT EXISTS idx_address_sender_address ON address_sender(address);&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;CREATE TABLE IF NOT EXISTS sendbox (&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    id INTEGER PRIMARY KEY,&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    address TEXT,&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    raw TEXT,&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    created_at DATETIME DEFAULT CURRENT_TIMESTAMP&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;);&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;CREATE INDEX IF NOT EXISTS idx_sendbox_address ON sendbox(address);&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;CREATE TABLE IF NOT EXISTS settings (&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    key TEXT PRIMARY KEY,&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    value TEXT,&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    created_at DATETIME DEFAULT CURRENT_TIMESTAMP,&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    updated_at DATETIME DEFAULT CURRENT_TIMESTAMP&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;);&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;CREATE TABLE IF NOT EXISTS users (&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    id INTEGER PRIMARY KEY,&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    user_email TEXT UNIQUE NOT NULL,&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    password TEXT NOT NULL,&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    user_info TEXT,&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    created_at DATETIME DEFAULT CURRENT_TIMESTAMP,&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    updated_at DATETIME DEFAULT CURRENT_TIMESTAMP&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;);&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;CREATE INDEX IF NOT EXISTS idx_users_user_email ON users(user_email);&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;CREATE TABLE IF NOT EXISTS users_address (&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    id INTEGER PRIMARY KEY,&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    user_id INTEGER,&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    address_id INTEGER UNIQUE,&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    created_at DATETIME DEFAULT CURRENT_TIMESTAMP&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;);&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;CREATE INDEX IF NOT EXISTS idx_users_address_user_id ON users_address(user_id);&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;CREATE INDEX IF NOT EXISTS idx_users_address_address_id ON users_address(address_id);&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;CREATE TABLE IF NOT EXISTS user_roles (&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    id INTEGER PRIMARY KEY,&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    user_id INTEGER UNIQUE NOT NULL,&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    role_text TEXT,&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    created_at DATETIME DEFAULT CURRENT_TIMESTAMP,&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    updated_at DATETIME DEFAULT CURRENT_TIMESTAMP&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;);&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;CREATE INDEX IF NOT EXISTS idx_user_roles_user_id ON user_roles(user_id);&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+
+&lt;p&gt;指令来源：&lt;a href=&quot;https://github.com/dreamhunter2333/cloudflare_temp_email/blob/main/db/schema.sql&quot;&gt;https://github.com/dreamhunter2333/cloudflare_temp_email/blob/main/db/schema.sql&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/../images/Cloudflare%E9%83%A8%E7%BD%B2%E5%85%8D%E8%B4%B9%E4%B8%B4%E6%97%B6%E9%82%AE%E7%AE%B1%E7%B3%BB%E7%BB%9F/6.png&quot; alt=&quot;6&quot;&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;至此D1数据库配置完成&lt;/p&gt;
+&lt;h3 id=&quot;后台程序部署&quot;&gt;&lt;a href=&quot;#后台程序部署&quot; class=&quot;headerlink&quot; title=&quot;后台程序部署&quot;&gt;&lt;/a&gt;后台程序部署&lt;/h3&gt;&lt;ol&gt;
+&lt;li&gt;&lt;p&gt;返回Workers和pages，选择创建&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/../images/Cloudflare%E9%83%A8%E7%BD%B2%E5%85%8D%E8%B4%B9%E4%B8%B4%E6%97%B6%E9%82%AE%E7%AE%B1%E7%B3%BB%E7%BB%9F/7.png&quot; alt=&quot;7&quot;&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;创建一个Workers，点击创建一个Workers，名字为tmapi，然后点击部署&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/../images/Cloudflare%E9%83%A8%E7%BD%B2%E5%85%8D%E8%B4%B9%E4%B8%B4%E6%97%B6%E9%82%AE%E7%AE%B1%E7%B3%BB%E7%BB%9F/8.png&quot; alt=&quot;8&quot;&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;在概述页面找到刚刚创建的Worker，点击右上角的编辑代码&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/../images/Cloudflare%E9%83%A8%E7%BD%B2%E5%85%8D%E8%B4%B9%E4%B8%B4%E6%97%B6%E9%82%AE%E7%AE%B1%E7%B3%BB%E7%BB%9F/9.png&quot; alt=&quot;9&quot;&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;点击左上角的文件夹符号，删除worker.js&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/../images/Cloudflare%E9%83%A8%E7%BD%B2%E5%85%8D%E8%B4%B9%E4%B8%B4%E6%97%B6%E9%82%AE%E7%AE%B1%E7%B3%BB%E7%BB%9F/10.png&quot; alt=&quot;10&quot;&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;下载这个文件，并且上传，再点击右上角的部署&lt;/p&gt;
+&lt;figure class=&quot;highlight plaintext&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;https://github.com/dreamhunter2333/cloudflare_temp_email/releases/latest/download/worker.js&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+
+&lt;p&gt;&lt;img src=&quot;/../images/Cloudflare%E9%83%A8%E7%BD%B2%E5%85%8D%E8%B4%B9%E4%B8%B4%E6%97%B6%E9%82%AE%E7%AE%B1%E7%B3%BB%E7%BB%9F/11.png&quot; alt=&quot;11&quot;&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;回到最开始的worker界面，点击设置，选择变量，添加以下四个变量，DOMAINS填写顶级域名，然后点击部署&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;figure class=&quot;highlight plaintext&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;4&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;ADMIN_PASSWORDS = [&amp;quot;1234&amp;quot;]&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;PASSWORDS = [&amp;quot;1234&amp;quot;]&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;DOMAINS = [&amp;quot;b4.hk&amp;quot;]&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;JWT_SECRET =[&amp;quot;xxxyyyzzz&amp;quot;]&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+
+&lt;p&gt;   &lt;img src=&quot;/../images/Cloudflare%E9%83%A8%E7%BD%B2%E5%85%8D%E8%B4%B9%E4%B8%B4%E6%97%B6%E9%82%AE%E7%AE%B1%E7%B3%BB%E7%BB%9F/12.png&quot; alt=&quot;12&quot;&gt;&lt;/p&gt;
+&lt;ol start=&quot;7&quot;&gt;
+&lt;li&gt;&lt;p&gt;往下滑动，点击下方的KV 命名空间绑定，选择创建，名称填写为temp_mail，点击添加&lt;/p&gt;
+&lt;p&gt;   &lt;img src=&quot;/../images/Cloudflare%E9%83%A8%E7%BD%B2%E5%85%8D%E8%B4%B9%E4%B8%B4%E6%97%B6%E9%82%AE%E7%AE%B1%E7%B3%BB%E7%BB%9F/13.png&quot; alt=&quot;13&quot;&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;&lt;img src=&quot;/../images/Cloudflare%E9%83%A8%E7%BD%B2%E5%85%8D%E8%B4%B9%E4%B8%B4%E6%97%B6%E9%82%AE%E7%AE%B1%E7%B3%BB%E7%BB%9F/14.png&quot; alt=&quot;14&quot;&gt;&lt;/p&gt;
+&lt;ol start=&quot;8&quot;&gt;
+&lt;li&gt;&lt;p&gt;返回Worker，绑定刚刚的KV，变量名称为KV，命名空间为刚刚创建的，然后部署&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/../images/Cloudflare%E9%83%A8%E7%BD%B2%E5%85%8D%E8%B4%B9%E4%B8%B4%E6%97%B6%E9%82%AE%E7%AE%B1%E7%B3%BB%E7%BB%9F/15.png&quot; alt=&quot;15&quot;&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;绑定D1数据库，变量名为DB&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/../images/Cloudflare%E9%83%A8%E7%BD%B2%E5%85%8D%E8%B4%B9%E4%B8%B4%E6%97%B6%E9%82%AE%E7%AE%B1%E7%B3%BB%E7%BB%9F/16.png&quot; alt=&quot;16&quot;&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;选择触发器，添加自定义后端域(tmapi.b4.hk)&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/../images/Cloudflare%E9%83%A8%E7%BD%B2%E5%85%8D%E8%B4%B9%E4%B8%B4%E6%97%B6%E9%82%AE%E7%AE%B1%E7%B3%BB%E7%BB%9F/17.png&quot; alt=&quot;17&quot;&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;安全检查，分别访问tmapi.b4.hk和tmapi.b4.hk&amp;#x2F;health_check，返回结构为ok则代表完成。&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/../images/Cloudflare%E9%83%A8%E7%BD%B2%E5%85%8D%E8%B4%B9%E4%B8%B4%E6%97%B6%E9%82%AE%E7%AE%B1%E7%B3%BB%E7%BB%9F/18.png&quot; alt=&quot;18&quot;&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h3 id=&quot;前端程序部署&quot;&gt;&lt;a href=&quot;#前端程序部署&quot; class=&quot;headerlink&quot; title=&quot;前端程序部署&quot;&gt;&lt;/a&gt;前端程序部署&lt;/h3&gt;&lt;ol&gt;
+&lt;li&gt;&lt;p&gt;返回Workers和pages点击创建，选择pages&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/../images/Cloudflare%E9%83%A8%E7%BD%B2%E5%85%8D%E8%B4%B9%E4%B8%B4%E6%97%B6%E9%82%AE%E7%AE%B1%E7%B3%BB%E7%BB%9F/19.png&quot; alt=&quot;19&quot;&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;生成配置文件，打开作者提供的地址：&lt;a href=&quot;https://temp-mail-docs.awsl.uk/zh/guide/ui/pages&quot;&gt;配置文件生成&lt;/a&gt;，在这里输入你的后端域名，点击生成，然后下载&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/../images/Cloudflare%E9%83%A8%E7%BD%B2%E5%85%8D%E8%B4%B9%E4%B8%B4%E6%97%B6%E9%82%AE%E7%AE%B1%E7%B3%BB%E7%BB%9F/20.png&quot; alt=&quot;20&quot;&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;返回刚刚的创建pages，选择上传资产，命名为tempmail，等待压缩包上传完成，选择部署站点&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/../images/Cloudflare%E9%83%A8%E7%BD%B2%E5%85%8D%E8%B4%B9%E4%B8%B4%E6%97%B6%E9%82%AE%E7%AE%B1%E7%B3%BB%E7%BB%9F/21.png&quot; alt=&quot;21&quot;&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;进入项目，点击自定义域，添加自己的前端域(tm.b4.hk)，点击继续，然后激活域&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/../images/Cloudflare%E9%83%A8%E7%BD%B2%E5%85%8D%E8%B4%B9%E4%B8%B4%E6%97%B6%E9%82%AE%E7%AE%B1%E7%B3%BB%E7%BB%9F/22.png&quot; alt=&quot;22&quot;&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;访问前端域名，输入密码1234，可以正常进入则代表完成，管理员页面为域名&amp;#x2F;admin&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/../images/Cloudflare%E9%83%A8%E7%BD%B2%E5%85%8D%E8%B4%B9%E4%B8%B4%E6%97%B6%E9%82%AE%E7%AE%B1%E7%B3%BB%E7%BB%9F/23.png&quot; alt=&quot;23&quot;&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h3 id=&quot;邮件设置&quot;&gt;&lt;a href=&quot;#邮件设置&quot; class=&quot;headerlink&quot; title=&quot;邮件设置&quot;&gt;&lt;/a&gt;邮件设置&lt;/h3&gt;&lt;ol&gt;
+&lt;li&gt;&lt;p&gt;进入到你设置的域名，选择左边侧边栏的电子邮件–&amp;gt;电子邮件路由&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/../images/Cloudflare%E9%83%A8%E7%BD%B2%E5%85%8D%E8%B4%B9%E4%B8%B4%E6%97%B6%E9%82%AE%E7%AE%B1%E7%B3%BB%E7%BB%9F/24.png&quot; alt=&quot;24&quot;&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;添加DNS记录&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/../images/Cloudflare%E9%83%A8%E7%BD%B2%E5%85%8D%E8%B4%B9%E4%B8%B4%E6%97%B6%E9%82%AE%E7%AE%B1%E7%B3%BB%E7%BB%9F/25.png&quot; alt=&quot;25&quot;&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;点击目标地址，验证一个邮箱地址，一般使用自己邮箱就好&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/../images/Cloudflare%E9%83%A8%E7%BD%B2%E5%85%8D%E8%B4%B9%E4%B8%B4%E6%97%B6%E9%82%AE%E7%AE%B1%E7%B3%BB%E7%BB%9F/26.png&quot; alt=&quot;26&quot;&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;点击路由规则，编辑，将操作改为发动到Worker，选择刚刚创建的后端，保存&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/../images/Cloudflare%E9%83%A8%E7%BD%B2%E5%85%8D%E8%B4%B9%E4%B8%B4%E6%97%B6%E9%82%AE%E7%AE%B1%E7%B3%BB%E7%BB%9F/27.png&quot; alt=&quot;27&quot;&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;其用这个规则&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/../images/Cloudflare%E9%83%A8%E7%BD%B2%E5%85%8D%E8%B4%B9%E4%B8%B4%E6%97%B6%E9%82%AE%E7%AE%B1%E7%B3%BB%E7%BB%9F/28.png&quot; alt=&quot;28&quot;&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;再次访问前端界面，正常访问则代表部署成功&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h3 id=&quot;发送邮件部署&quot;&gt;&lt;a href=&quot;#发送邮件部署&quot; class=&quot;headerlink&quot; title=&quot;发送邮件部署&quot;&gt;&lt;/a&gt;发送邮件部署&lt;/h3&gt;&lt;ol&gt;
+&lt;li&gt;&lt;p&gt;访问注册&lt;a href=&quot;https://resend.com/&quot;&gt;https://resend.com&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;选择Domains&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/../images/Cloudflare%E9%83%A8%E7%BD%B2%E5%85%8D%E8%B4%B9%E4%B8%B4%E6%97%B6%E9%82%AE%E7%AE%B1%E7%B3%BB%E7%BB%9F/29.png&quot; alt=&quot;29&quot;&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;添加domain，并且验证&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/../images/Cloudflare%E9%83%A8%E7%BD%B2%E5%85%8D%E8%B4%B9%E4%B8%B4%E6%97%B6%E9%82%AE%E7%AE%B1%E7%B3%BB%E7%BB%9F/30.png&quot; alt=&quot;30&quot;&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;点击旁边的api，创建api密钥，选择全权限，复制密钥&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/../images/Cloudflare%E9%83%A8%E7%BD%B2%E5%85%8D%E8%B4%B9%E4%B8%B4%E6%97%B6%E9%82%AE%E7%AE%B1%E7%B3%BB%E7%BB%9F/31.png&quot; alt=&quot;31&quot;&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;回到cloudflare的worker和pages页面，选择后端的worker，进入项目&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/../images/Cloudflare%E9%83%A8%E7%BD%B2%E5%85%8D%E8%B4%B9%E4%B8%B4%E6%97%B6%E9%82%AE%E7%AE%B1%E7%B3%BB%E7%BB%9F/32.png&quot; alt=&quot;32&quot;&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;点击设置，选择变量，点击编辑变量，添加变量，部署&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;figure class=&quot;highlight plaintext&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;RESEND_TOKEN = 你的密钥&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+
+&lt;p&gt;   &lt;img src=&quot;/../images/Cloudflare%E9%83%A8%E7%BD%B2%E5%85%8D%E8%B4%B9%E4%B8%B4%E6%97%B6%E9%82%AE%E7%AE%B1%E7%B3%BB%E7%BB%9F/33.png&quot; alt=&quot;33&quot;&gt;&lt;/p&gt;
+&lt;h3 id=&quot;Telegram机器人部署（强烈建议）&quot;&gt;&lt;a href=&quot;#Telegram机器人部署（强烈建议）&quot; class=&quot;headerlink&quot; title=&quot;Telegram机器人部署（强烈建议）&quot;&gt;&lt;/a&gt;Telegram机器人部署（强烈建议）&lt;/h3&gt;&lt;ol&gt;
+&lt;li&gt;&lt;p&gt;创建一个机器人，在tg中搜索@BotFather申请&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;获取到机器人的token，然后搜索@userinfobot，获取自己的账户id&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;仿照之前的步骤再次添加变量&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;figure class=&quot;highlight plaintext&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;TELEGRAM_BOT_TOKEN = 机器人token&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+
+&lt;ol start=&quot;4&quot;&gt;
+&lt;li&gt;&lt;p&gt;打开系统的管理员页面：前端域名&amp;#x2F;admin，在此处填写你的tg用户id&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/../images/Cloudflare%E9%83%A8%E7%BD%B2%E5%85%8D%E8%B4%B9%E4%B8%B4%E6%97%B6%E9%82%AE%E7%AE%B1%E7%B3%BB%E7%BB%9F/34.png&quot; alt=&quot;34&quot;&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;&lt;strong&gt;至此所有基础配置完成&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;附：所有变量名称及作用，添加方式如之前所示&lt;/p&gt;
+&lt;figure class=&quot;highlight plaintext&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;6&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;7&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;8&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;9&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;10&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;11&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;12&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;13&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;14&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;15&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;16&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;17&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;18&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;19&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;20&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;21&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;22&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;23&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;24&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;25&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;26&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;27&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;28&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;29&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;30&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;31&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;32&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;33&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;34&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;[vars]&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;# TITLE = &amp;quot;Custom Title&amp;quot; # 自定义网站标题&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;PREFIX = &amp;quot;tmp&amp;quot; # 要处理的邮箱名称前缀，不需要后缀可配置为空字符串&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;# 如果你想要你的网站私有，取消下面的注释，并修改密码&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;# PASSWORDS = [&amp;quot;123&amp;quot;, &amp;quot;456&amp;quot;]&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;# admin 控制台密码, 不配置则不允许访问控制台&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;# ADMIN_PASSWORDS = [&amp;quot;123&amp;quot;, &amp;quot;456&amp;quot;]&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;# admin 联系方式，不配置则不显示，可配置任意字符串&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;# ADMIN_CONTACT = &amp;quot;xx@xx.xxx&amp;quot;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;DOMAINS = [&amp;quot;xxx.xxx1&amp;quot; , &amp;quot;xxx.xxx2&amp;quot;] # 你的域名, 支持多个域名&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;JWT_SECRET = &amp;quot;xxx&amp;quot; # 用于生成 jwt 的密钥, jwt 用于给用户登录以及鉴权&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;BLACK_LIST = &amp;quot;&amp;quot; # 黑名单，用于过滤发件人，逗号分隔&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;# 是否允许用户创建邮件, 不配置则不允许&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;ENABLE_USER_CREATE_EMAIL = true&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;# 允许用户删除邮件, 不配置则不允许&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;ENABLE_USER_DELETE_EMAIL = true&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;# 允许自动回复邮件&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;ENABLE_AUTO_REPLY = false&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;# 是否启用 webhook&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;# ENABLE_WEBHOOK = true&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;# 前端界面页脚文本&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;# COPYRIGHT = &amp;quot;Dream Hunter&amp;quot;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;# 默认发送邮件余额，如果不设置，将为 0&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;# DEFAULT_SEND_BALANCE = 1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;# Turnstile 人机验证配置&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;# CF_TURNSTILE_SITE_KEY = &amp;quot;&amp;quot;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;# CF_TURNSTILE_SECRET_KEY = &amp;quot;&amp;quot;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;# dkim config&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;# DKIM_SELECTOR = &amp;quot;mailchannels&amp;quot; # 参考 DKIM 部分 mailchannels._domainkey 的 mailchannels&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;# DKIM_PRIVATE_KEY = &amp;quot;&amp;quot; # 参考 DKIM 部分 priv_key.txt 的内容&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;# telegram bot 最多绑定邮箱数量&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;# TG_MAX_ACCOUNTS = 5&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;# 全局转发地址列表，如果不配置则不启用，启用后所有邮件都会转发到列表中的地址&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;# FORWARD_ADDRESS_LIST =</summary>
         
       
     
@@ -105,7 +271,44 @@
       
         
         
-    <summary type="html"></summary>
+    <summary type="html">&lt;h1 id=&quot;Mac实用软件推荐-1&quot;&gt;&lt;a href=&quot;#Mac实用软件推荐-1&quot; class=&quot;headerlink&quot; title=&quot;Mac实用软件推荐(1)&quot;&gt;&lt;/a&gt;Mac实用软件推荐(1)&lt;/h1&gt;&lt;blockquote&gt;
+&lt;p&gt;电脑配置：MacBook Pro M1 Pro &lt;/p&gt;
+&lt;p&gt;系统版本：macOS15.0 &lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h2 id=&quot;软件介绍&quot;&gt;&lt;a href=&quot;#软件介绍&quot; class=&quot;headerlink&quot; title=&quot;软件介绍&quot;&gt;&lt;/a&gt;软件介绍&lt;/h2&gt;&lt;p&gt;软件名：QSpace&lt;/p&gt;
+&lt;p&gt;简介：一款简洁高效的多窗格文件管理器，灵活且实用！ &lt;/p&gt;
+&lt;p&gt;系统支持：macOS10.13及以上&lt;/p&gt;
+&lt;p&gt;芯片支持：Apple silicon &amp;amp; Intel&lt;/p&gt;
+&lt;h2 id=&quot;基础功能&quot;&gt;&lt;a href=&quot;#基础功能&quot; class=&quot;headerlink&quot; title=&quot;基础功能&quot;&gt;&lt;/a&gt;基础功能&lt;/h2&gt;&lt;ol&gt;
+&lt;li&gt;&lt;p&gt;一个窗口，多种布局，可在一个窗口同时显示多个文件夹，简单且快捷的完成文件夹之间的文件传输；&lt;/p&gt;
+&lt;img src=&quot;https://cn-sy1.rains3.com/pai-source/software_share/Qspace/1.jpg&quot; alt=&quot;1&quot; style=&quot;zoom:50%;&quot; /&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;地址栏可交互，支持自动补全以及手动输入；&lt;/p&gt;
+&lt;img src=&quot;https://cn-sy1.rains3.com/pai-source/software_share/Qspace/2.jpg&quot; alt=&quot;2&quot; style=&quot;zoom:40%;&quot; /&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;支持一键在终端打开文件夹，可选择多种不同终端软件（需专业版）；&lt;/p&gt;
+&lt;img src=&quot;https://cn-sy1.rains3.com/pai-source/software_share/Qspace/3.jpg&quot; alt=&quot;3&quot; style=&quot;zoom:43%;&quot; /&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;一键快速比较和计算不同文件的哈希值，支持：MD5、SHA256、SHA128、SHA224、SHA384、SHA512、CRC32；&lt;/p&gt;
+&lt;img src=&quot;https://cn-sy1.rains3.com/pai-source/software_share/Qspace/4.jpg&quot; style=&quot;zoom:43%;&quot; /&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;轻松切换不同操作习惯，内置macOS和Windows系统的操作习惯，也可根据自己习惯自定义；&lt;/p&gt;
+&lt;img src=&quot;https://cn-sy1.rains3.com/pai-source/software_share/Qspace/5.jpg&quot; style=&quot;zoom:33%;&quot; /&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;可根据设定模版创建文件及文件夹，支持自定义模版以及变变量，支持各种文件类型；&lt;/p&gt;
+&lt;img src=&quot;https://cn-sy1.rains3.com/pai-source/software_share/Qspace/6.jpg&quot; style=&quot;zoom:50%;&quot; /&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2 id=&quot;拓展功能-需单独购买&quot;&gt;&lt;a href=&quot;#拓展功能-需单独购买&quot; class=&quot;headerlink&quot; title=&quot;拓展功能(需单独购买)&quot;&gt;&lt;/a&gt;拓展功能(需单独购买)&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;服务器云存储挂载本地&lt;/strong&gt;，接近本地文件的操作感受，可以直接重命名、编辑等操作，可以直接在不同云存储和本地文件夹中进行拖拽。支持FTP、SFTP、WebDAV、Dropbox、OneDrive、GoogleDrive、SMB、NFS、AFP、亚马逊S3、阿里云OSS、华为云OBS、腾讯云COS、京东云OSS、七牛KODO、又拍云存储、阿里云盘以及百度云盘；&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;增强归档管理&lt;/strong&gt;,内置maczip解压缩引擎，可解压20多种常见归档格式；&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;暂存架&lt;/strong&gt;，类似dropover的功能，可以暂时将文件悬浮于最上层窗口且保持在窗口上；&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;批量重命名&lt;/strong&gt;，支持设定预设和变量。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&quot;本人认为亮点功能&quot;&gt;&lt;a href=&quot;#本人认为亮点功能&quot; class=&quot;headerlink&quot; title=&quot;本人认为亮点功能&quot;&gt;&lt;/a&gt;本人认为亮点功能&lt;/h2&gt;&lt;p&gt;1、多文件夹布局&lt;/p&gt;
+&lt;p&gt;2、挂在服务器存储到本地&lt;/p&gt;
+&lt;p&gt;3、归档管理&lt;/p&gt;
+&lt;p&gt;4、哈希值计算&lt;/p&gt;
+&lt;h2 id=&quot;购买链接&quot;&gt;&lt;a href=&quot;#购买链接&quot; class=&quot;headerlink&quot; title=&quot;购买链接&quot;&gt;&lt;/a&gt;购买链接&lt;/h2&gt;&lt;p&gt;下载链接：&lt;a</summary>
         
       
     
@@ -132,7 +335,162 @@
       
         
         
-    <summary type="html"></summary>
+    <summary type="html">&lt;h1 id=&quot;在Linux服务器上安装Windows系统&quot;&gt;&lt;a href=&quot;#在Linux服务器上安装Windows系统&quot; class=&quot;headerlink&quot; title=&quot;在Linux服务器上安装Windows系统&quot;&gt;&lt;/a&gt;在Linux服务器上安装Windows系统&lt;/h1&gt;&lt;blockquote&gt;
+&lt;p&gt;系统环境：雨云2H4G服务器，Ubuntu22.04系统&lt;/p&gt;
+&lt;p&gt;安装软件：Docker,docker-compose&lt;/p&gt;
+&lt;p&gt;使用我的推广链接可获得首月五折优惠券：&lt;a href=&quot;https://www.rainyun.com/MTEyODEy_&quot;&gt;雨云&lt;/a&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h2 id=&quot;第一步：创建安装目录&quot;&gt;&lt;a href=&quot;#第一步：创建安装目录&quot; class=&quot;headerlink&quot; title=&quot;第一步：创建安装目录&quot;&gt;&lt;/a&gt;第一步：创建安装目录&lt;/h2&gt;&lt;p&gt;在终端输入&lt;/p&gt;
+&lt;figure class=&quot;highlight shell&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;mkdir /windows&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+
+&lt;p&gt;进入刚刚创建的目录&lt;/p&gt;
+&lt;figure class=&quot;highlight shell&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;cd /windows&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+
+
+
+&lt;h2 id=&quot;第二步：创建文件&quot;&gt;&lt;a href=&quot;#第二步：创建文件&quot; class=&quot;headerlink&quot; title=&quot;第二步：创建文件&quot;&gt;&lt;/a&gt;第二步：创建文件&lt;/h2&gt;&lt;p&gt;1,输入&lt;/p&gt;
+&lt;figure class=&quot;highlight shell&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;vim docker-compose.yml&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+
+&lt;p&gt;2,在英文输入状态下，点击键盘上的 i (insert),复制粘贴以下内容：&lt;/p&gt;
+&lt;figure class=&quot;highlight plaintext&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;6&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;7&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;8&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;9&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;10&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;11&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;12&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;13&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;14&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;15&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;version: &amp;quot;3&amp;quot;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;services:&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;  windows:&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    image: dockurr/windows&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    container_name: windows&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    devices:&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;      - /dev/kvm&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    cap_add:&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;      - NET_ADMIN&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    ports:&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;      - 8006:8006&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;      - 3389:3389/tcp&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;      - 3389:3389/udp&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    stop_grace_period: 2m&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    restart: on-failure&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+
+&lt;p&gt;3,点击ESC退出insert模式，在英文输入状态下输入“:wq”,单击enter&lt;/p&gt;
+&lt;h2 id=&quot;第三步：运行程序&quot;&gt;&lt;a href=&quot;#第三步：运行程序&quot; class=&quot;headerlink&quot; title=&quot;第三步：运行程序&quot;&gt;&lt;/a&gt;第三步：运行程序&lt;/h2&gt;&lt;p&gt;在终端中输入&lt;/p&gt;
+&lt;figure class=&quot;highlight shell&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;docker-compose up -d&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+
+
+
+&lt;h2 id=&quot;第四步：安装Windows&quot;&gt;&lt;a href=&quot;#第四步：安装Windows&quot; class=&quot;headerlink&quot; title=&quot;第四步：安装Windows&quot;&gt;&lt;/a&gt;第四步：安装Windows&lt;/h2&gt;&lt;p&gt;在浏览器输入：你的IP:8006&lt;/p&gt;
+&lt;p&gt;随后会自动下载镜像包并且安装Windows&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;[!NOTE]&lt;/p&gt;
+&lt;p&gt;记得放行服务器的8006以及3389端口，否则可能出现无法访问的情况&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h2 id=&quot;附：环境变量&quot;&gt;&lt;a href=&quot;#附：环境变量&quot; class=&quot;headerlink&quot; title=&quot;附：环境变量&quot;&gt;&lt;/a&gt;附：环境变量&lt;/h2&gt;&lt;h5 id=&quot;更改Windows版本&quot;&gt;&lt;a href=&quot;#更改Windows版本&quot; class=&quot;headerlink&quot; title=&quot;更改Windows版本&quot;&gt;&lt;/a&gt;更改Windows版本&lt;/h5&gt;&lt;p&gt;在docker-compose.yml文件中添加：&lt;/p&gt;
+&lt;figure class=&quot;highlight plaintext&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;environment:&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;  VERSION: &amp;quot;win11&amp;quot;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+
+&lt;p&gt;对应的windows版本：&lt;/p&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;Value&lt;/th&gt;
+&lt;th&gt;Description&lt;/th&gt;
+&lt;th&gt;Source&lt;/th&gt;
+&lt;th&gt;Transfer&lt;/th&gt;
+&lt;th&gt;Size&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;&lt;tr&gt;
+&lt;td&gt;win11&lt;/td&gt;
+&lt;td&gt;Windows 11 Pro&lt;/td&gt;
+&lt;td&gt;Microsoft&lt;/td&gt;
+&lt;td&gt;Fast&lt;/td&gt;
+&lt;td&gt;6.4 GB&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;win10&lt;/td&gt;
+&lt;td&gt;Windows 10 Pro&lt;/td&gt;
+&lt;td&gt;Microsoft&lt;/td&gt;
+&lt;td&gt;Fast&lt;/td&gt;
+&lt;td&gt;5.8 GB&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;ltsc10&lt;/td&gt;
+&lt;td&gt;Windows 10 LTSC&lt;/td&gt;
+&lt;td&gt;Microsoft&lt;/td&gt;
+&lt;td&gt;Fast&lt;/td&gt;
+&lt;td&gt;4.6 GB&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;win81&lt;/td&gt;
+&lt;td&gt;Windows 8.1 Pro&lt;/td&gt;
+&lt;td&gt;Microsoft&lt;/td&gt;
+&lt;td&gt;Fast&lt;/td&gt;
+&lt;td&gt;4.2 GB&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;win7&lt;/td&gt;
+&lt;td&gt;Windows 7 SP1&lt;/td&gt;
+&lt;td&gt;Bob Pony&lt;/td&gt;
+&lt;td&gt;Medium&lt;/td&gt;
+&lt;td&gt;3.0 GB&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;vista&lt;/td&gt;
+&lt;td&gt;Windows Vista SP2&lt;/td&gt;
+&lt;td&gt;Bob Pony&lt;/td&gt;
+&lt;td&gt;Medium&lt;/td&gt;
+&lt;td&gt;3.6 GB&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;winxp&lt;/td&gt;
+&lt;td&gt;Windows XP SP3&lt;/td&gt;
+&lt;td&gt;Bob Pony&lt;/td&gt;
+&lt;td&gt;Medium&lt;/td&gt;
+&lt;td&gt;0.6 GB&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;2022&lt;/td&gt;
+&lt;td&gt;Windows Server 2022&lt;/td&gt;
+&lt;td&gt;Microsoft&lt;/td&gt;
+&lt;td&gt;Fast&lt;/td&gt;
+&lt;td&gt;4.7 GB&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;2019&lt;/td&gt;
+&lt;td&gt;Windows Server 2019&lt;/td&gt;
+&lt;td&gt;Microsoft&lt;/td&gt;
+&lt;td&gt;Fast&lt;/td&gt;
+&lt;td&gt;5.3 GB&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;2016&lt;/td&gt;
+&lt;td&gt;Windows Server 2016&lt;/td&gt;
+&lt;td&gt;Microsoft&lt;/td&gt;
+&lt;td&gt;Fast&lt;/td&gt;
+&lt;td&gt;6.5 GB&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;2012&lt;/td&gt;
+&lt;td&gt;Windows Server 2012 R2&lt;/td&gt;
+&lt;td&gt;Microsoft&lt;/td&gt;
+&lt;td&gt;Fast&lt;/td&gt;
+&lt;td&gt;4.3 GB&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;2008&lt;/td&gt;
+&lt;td&gt;Windows Server 2008 R2&lt;/td&gt;
+&lt;td&gt;Microsoft&lt;/td&gt;
+&lt;td&gt;Fast&lt;/td&gt;
+&lt;td&gt;3.0 GB&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;core11&lt;/td&gt;
+&lt;td&gt;Tiny 11 Core&lt;/td&gt;
+&lt;td&gt;Archive.org&lt;/td&gt;
+&lt;td&gt;Slow&lt;/td&gt;
+&lt;td&gt;2.1 GB&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;tiny11&lt;/td&gt;
+&lt;td&gt;Tiny 11&lt;/td&gt;
+&lt;td&gt;Archive.org&lt;/td&gt;
+&lt;td&gt;Slow&lt;/td&gt;
+&lt;td&gt;3.8 GB&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;tiny10&lt;/td&gt;
+&lt;td&gt;Tiny 10&lt;/td&gt;
+&lt;td&gt;Archive.org&lt;/td&gt;
+&lt;td&gt;Slow&lt;/td&gt;
+&lt;td&gt;3.6 GB&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;&lt;/table&gt;
+&lt;h5 id=&quot;设置核心数以及内存大小&quot;&gt;&lt;a href=&quot;#设置核心数以及内存大小&quot; class=&quot;headerlink&quot; title=&quot;设置核心数以及内存大小&quot;&gt;&lt;/a&gt;设置核心数以及内存大小&lt;/h5&gt;&lt;figure class=&quot;highlight plaintext&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;environment:&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;  RAM_SIZE: &amp;quot;8G&amp;quot;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;  CPU_CORES: &amp;quot;4&amp;quot;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+
+&lt;h5 id=&quot;更改硬盘大小&quot;&gt;&lt;a href=&quot;#更改硬盘大小&quot; class=&quot;headerlink&quot; title=&quot;更改硬盘大小&quot;&gt;&lt;/a&gt;更改硬盘大小&lt;/h5&gt;&lt;figure class=&quot;highlight plaintext&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;environment:&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;  DISK_SIZE: &amp;quot;256G&amp;quot;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+
+&lt;h5 id=&quot;更改存储位置&quot;&gt;&lt;a href=&quot;#更改存储位置&quot; class=&quot;headerlink&quot; title=&quot;更改存储位置&quot;&gt;&lt;/a&gt;更改存储位置&lt;/h5&gt;&lt;figure class=&quot;highlight plaintext&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;volumes:&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;   -</summary>
         
       
     
@@ -157,7 +515,32 @@
       
         
         
-    <summary type="html"></summary>
+    <summary type="html">&lt;h1 id=&quot;API使用方式&quot;&gt;&lt;a href=&quot;#API使用方式&quot; class=&quot;headerlink&quot; title=&quot;API使用方式&quot;&gt;&lt;/a&gt;API使用方式&lt;/h1&gt;&lt;h2 id=&quot;第一种-推荐-使用网站提供的聊天工具&quot;&gt;&lt;a href=&quot;#第一种-推荐-使用网站提供的聊天工具&quot; class=&quot;headerlink&quot; title=&quot;第一种(推荐):使用网站提供的聊天工具&quot;&gt;&lt;/a&gt;第一种(推荐):使用网站提供的聊天工具&lt;/h2&gt;&lt;p&gt;​	1、注册完成后点击&lt;strong&gt;右上角控制台&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;​	2、点击左侧栏令牌&lt;/p&gt;
+&lt;img src=&quot;https://cn-sy1.rains3.com/pai-source/API%E8%AF%B4%E6%98%8E%E4%B9%A6/1.1.png&quot; alt=&quot;1.1&quot; style=&quot;zoom:15%;&quot; /&gt;
+
+
+
+&lt;p&gt;​	3、点击新建令牌&lt;/p&gt;
+&lt;img src=&quot;https://cn-sy1.rains3.com/pai-source/API%E8%AF%B4%E6%98%8E%E4%B9%A6/1.2.png&quot; alt=&quot;1.2&quot; style=&quot;zoom:15%;&quot; /&gt;
+
+
+
+&lt;p&gt;​	4、名称:随意填写自己喜好的名称&lt;/p&gt;
+&lt;p&gt;​	       额度:当前Api可使用的最大额度&lt;/p&gt;
+&lt;img src=&quot;https://cn-sy1.rains3.com/pai-source/API%E8%AF%B4%E6%98%8E%E4%B9%A6/1.3.png&quot; style=&quot;zoom:25%;&quot; /&gt;
+
+&lt;p&gt;​	5、点击复制。&lt;/p&gt;
+&lt;img src=&quot;https://cn-sy1.rains3.com/pai-source/API%E8%AF%B4%E6%98%8E%E4%B9%A6/1.4.png&quot; alt=&quot;1.4&quot; style=&quot;zoom:15%;&quot; /&gt;
+
+&lt;p&gt;6、点击聊天&lt;/p&gt;
+&lt;img src=&quot;https://cn-sy1.rains3.com/pai-source/API%E8%AF%B4%E6%98%8E%E4%B9%A6/1.5.png&quot; alt=&quot;1.5&quot; style=&quot;zoom:15%;&quot; /&gt;
+
+&lt;p&gt;7、将api填入聊天设置，点击左下角头像旁边的设置按钮&lt;/p&gt;
+&lt;img src=&quot;https://cn-sy1.rains3.com/pai-source/API%E8%AF%B4%E6%98%8E%E4%B9%A6/1.6.png&quot; alt=&quot;1.6&quot; style=&quot;zoom:20%;&quot; /&gt;
+
+&lt;p&gt;8、填入刚刚复制的Api&lt;/p&gt;
+&lt;img src=&quot;https://cn-sy1.rains3.com/pai-source/API%E8%AF%B4%E6%98%8E%E4%B9%A6/1.7.png&quot; alt=&quot;1.7&quot; style=&quot;zoom:20%;&quot;</summary>
         
       
     
@@ -180,7 +563,10 @@
       
         
         
-    <summary type="html"></summary>
+    <summary type="html">&lt;h1 id=&quot;免责申明&quot;&gt;&lt;a href=&quot;#免责申明&quot; class=&quot;headerlink&quot; title=&quot;免责申明&quot;&gt;&lt;/a&gt;免责申明&lt;/h1&gt;&lt;p&gt;免责声明：&lt;/p&gt;
+&lt;p&gt;本人所发表的所有内容、观点或言论均仅代表个人观点，与任何组织、机构或个人无关。请注意，所有内容均为虚构，不代表任何真实事件或事实。读者或听众请自行判断并承担所有风险。&lt;/p&gt;
+&lt;p&gt;此致，&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Pai&lt;/strong&gt;</summary>
         
       
     
@@ -203,7 +589,53 @@
       
         
         
-    <summary type="html"></summary>
+    <summary type="html">&lt;h1 id=&quot;未成年人ICP备案注意事项&quot;&gt;&lt;a href=&quot;#未成年人ICP备案注意事项&quot; class=&quot;headerlink&quot; title=&quot;未成年人ICP备案注意事项&quot;&gt;&lt;/a&gt;未成年人ICP备案注意事项&lt;/h1&gt;&lt;hr&gt;
+&lt;h3 id=&quot;查阅当地信通院备案年龄要求&quot;&gt;&lt;a href=&quot;#查阅当地信通院备案年龄要求&quot; class=&quot;headerlink&quot; title=&quot;查阅当地信通院备案年龄要求&quot;&gt;&lt;/a&gt;查阅当地信通院备案年龄要求&lt;/h3&gt;&lt;p&gt;可以前往&lt;a href=&quot;https://help.aliyun.com/document_detail/116031.html?spm=a2c4g.50264.0.0.4f945519wWGAVM&quot;&gt;阿里云&lt;/a&gt;查看各地管局对ICP备案的年龄要求&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;注：各地区管局要求可能会有所差异&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h3 id=&quot;准备所需材料&quot;&gt;&lt;a href=&quot;#准备所需材料&quot; class=&quot;headerlink&quot; title=&quot;准备所需材料&quot;&gt;&lt;/a&gt;准备所需材料&lt;/h3&gt;&lt;h5 id=&quot;个人材料：&quot;&gt;&lt;a href=&quot;#个人材料：&quot; class=&quot;headerlink&quot; title=&quot;个人材料：&quot;&gt;&lt;/a&gt;个人材料：&lt;/h5&gt;&lt;p&gt;1.个人身份证件（身份证，护照等）&lt;/p&gt;
+&lt;p&gt;2.承诺书，内容:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;p&gt;介绍网站内容 &lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;与监护人是什么关系&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;承诺所有网站都是本人使用，不做违法违规信息，否则愿意接受注销网站并列入域名黑名单的处罚。&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;3.朗读视频，朗读内容：我叫xxx（备案人），此次备案主体为xxx（备案主体），我愿意为提交的备案信息真实性负责，时间：YYYY年MM月DD日&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;视频中时间不要与提交备案时间超过三天&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;其他辅助材料：&lt;/p&gt;
+&lt;p&gt;1.父母任意一方身份证（用于证明监护关系）&lt;/p&gt;
+&lt;h3 id=&quot;备案步骤&quot;&gt;&lt;a href=&quot;#备案步骤&quot; class=&quot;headerlink&quot; title=&quot;备案步骤&quot;&gt;&lt;/a&gt;备案步骤&lt;/h3&gt;&lt;ol&gt;
+&lt;li&gt;前往阿里云主页点击ICP备案&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;&lt;img src=&quot;https://source.tuftech.org/beian1.png&quot; alt=&quot;备案&quot;&gt;&lt;/p&gt;
+&lt;ol start=&quot;2&quot;&gt;
+&lt;li&gt;选择开始备案&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;&lt;img src=&quot;https://source.tuftech.org/beian2.png&quot; alt=&quot;备案&quot;&gt;&lt;/p&gt;
+&lt;ol start=&quot;3&quot;&gt;
+&lt;li&gt;选择免费，开始备案&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;&lt;img src=&quot;https://source.tuftech.org/beian3.png&quot; alt=&quot;备案&quot;&gt;&lt;/p&gt;
+&lt;ol start=&quot;4&quot;&gt;
+&lt;li&gt;选择要备案的域名&lt;/li&gt;
+&lt;/ol&gt;
+&lt;blockquote&gt;
+&lt;p&gt;由于我已经完成备案所以可能会有些出入&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;&lt;img src=&quot;https://source.tuftech.org/beian4.png&quot; alt=&quot;备案&quot;&gt;&lt;/p&gt;
+&lt;ol start=&quot;5&quot;&gt;
+&lt;li&gt;根据提示一步一步提交材料进行备案&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h3 id=&quot;注意事项&quot;&gt;&lt;a href=&quot;#注意事项&quot; class=&quot;headerlink&quot; title=&quot;注意事项&quot;&gt;&lt;/a&gt;注意事项&lt;/h3&gt;&lt;ul&gt;
+&lt;li&gt;提交的材料要保证真实性和及时性，避免相差时间太久&lt;/li&gt;
+&lt;li&gt;注意接听阿里云客服的电话：95187，(0571) 2895 0440&lt;/li&gt;
+&lt;li&gt;再收到短信核验后，必须在24小时内进入&lt;a</summary>
         
       
     
@@ -230,7 +662,21 @@
       
         
         
-    <summary type="html"></summary>
+    <summary type="html">&lt;h1 id=&quot;欢迎来到我的博客&quot;&gt;&lt;a href=&quot;#欢迎来到我的博客&quot; class=&quot;headerlink&quot; title=&quot;欢迎来到我的博客&quot;&gt;&lt;/a&gt;欢迎来到我的博客&lt;/h1&gt;&lt;p&gt;这是我的博客的首页文章，我很高兴能与您分享我的思考和经验。&lt;/p&gt;
+&lt;h2 id=&quot;关于我&quot;&gt;&lt;a href=&quot;#关于我&quot; class=&quot;headerlink&quot; title=&quot;关于我&quot;&gt;&lt;/a&gt;关于我&lt;/h2&gt;&lt;p&gt;我是一个热爱技术和写作的人，喜欢分享自己的学习和成果。这个博客是我记录和展示我的思考、项目和想法的地方。&lt;/p&gt;
+&lt;h2 id=&quot;博客内容&quot;&gt;&lt;a href=&quot;#博客内容&quot; class=&quot;headerlink&quot; title=&quot;博客内容&quot;&gt;&lt;/a&gt;博客内容&lt;/h2&gt;&lt;p&gt;在这个博客中，您将找到以下类型的文章：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;技术教程和指南&lt;/li&gt;
+&lt;li&gt;开发经验和心得分享&lt;/li&gt;
+&lt;li&gt;最新科技趋势和新闻评论&lt;/li&gt;
+&lt;li&gt;随笔和个人见解&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&quot;如何使用这个博客&quot;&gt;&lt;a href=&quot;#如何使用这个博客&quot; class=&quot;headerlink&quot; title=&quot;如何使用这个博客&quot;&gt;&lt;/a&gt;如何使用这个博客&lt;/h2&gt;&lt;p&gt;您可以浏览博客的不同分类和标签来查找感兴趣的文章。如果您对特定的主题或文章有任何疑问或建议，欢迎在评论区留言。&lt;/p&gt;
+&lt;h2 id=&quot;订阅博客&quot;&gt;&lt;a href=&quot;#订阅博客&quot; class=&quot;headerlink&quot; title=&quot;订阅博客&quot;&gt;&lt;/a&gt;订阅博客&lt;/h2&gt;&lt;p&gt;如果您喜欢我的博客并希望及时收到新文章的更新，可以订阅我的博客。您可以在博客页面中找到订阅选项。&lt;/p&gt;
+&lt;h2 id=&quot;联系我&quot;&gt;&lt;a href=&quot;#联系我&quot; class=&quot;headerlink&quot; title=&quot;联系我&quot;&gt;&lt;/a&gt;联系我&lt;/h2&gt;&lt;p&gt;如果您有任何问题、建议或合作机会，可以通过以下方式联系我：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;电子邮件：&lt;a href=&quot;mailto:&amp;#77;&amp;#117;&amp;#115;&amp;#x6b;&amp;#90;&amp;#x68;&amp;#x6f;&amp;#x75;&amp;#x4d;&amp;#81;&amp;#x40;&amp;#111;&amp;#x75;&amp;#116;&amp;#x6c;&amp;#111;&amp;#111;&amp;#x6b;&amp;#x2e;&amp;#99;&amp;#x6f;&amp;#109;&quot;&gt;&amp;#77;&amp;#117;&amp;#115;&amp;#x6b;&amp;#90;&amp;#x68;&amp;#x6f;&amp;#x75;&amp;#x4d;&amp;#81;&amp;#x40;&amp;#111;&amp;#x75;&amp;#116;&amp;#x6c;&amp;#111;&amp;#111;&amp;#x6b;&amp;#x2e;&amp;#99;&amp;#x6f;&amp;#109;&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;QQ:</summary>
         
       
     
